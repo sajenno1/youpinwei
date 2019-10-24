@@ -9,8 +9,44 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#000",
-    "navigationBarTitleText": "优品味",
+    "navigationBarTitleText": "优品位",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#0396ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "./icon/nav_home.png",
+        "selectedIconPath": "./icon/nav_home_t.png"
+      },
+      {
+        "pagePath": "pages/products/products",
+        "text": "产品",
+        "iconPath": "./icon/nav_product.png",
+        "selectedIconPath": "./icon/nav_product_t.png"
+      },
+      {
+        "pagePath": "pages/shopcart/shopcart",
+        "text": "购物车",
+        "iconPath": "./icon/nav_cart.png",
+        "selectedIconPath": "./icon/nav_cart_t.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "./icon/nav_cate.png",
+        "selectedIconPath": "./icon/nav_cate_t.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./icon/nav_mine.png",
+        "selectedIconPath": "./icon/nav_mine_t.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

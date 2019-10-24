@@ -1,4 +1,6 @@
 //app.js
+import * as api from './http/api.js'
+import http from './http/http.js' 
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -10,6 +12,7 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        wx.setStorageSync('code', res.code)
       }
     })
     // 获取用户信息
@@ -35,5 +38,15 @@ App({
   },
   globalData: {
     userInfo: null
+  },
+  /**
+   * 获取商品列表
+   */
+  getProductList() {
+    http.post(api.PRODUCT_LIST, {accessType: 'MP'}).then(res => {
+      console.log(res)
+    }).catch(err => {
+      console.log(err)
+    })
   }
 })

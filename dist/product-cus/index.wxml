@@ -1,0 +1,19 @@
+<view class="products">
+  <image src="{{ item.img }}"></image>
+  <text>{{ item.productName }}</text>
+  <text>库存：{{ item.productStock }}</text>
+  <view class="products-price">
+    <text>￥ {{ item.productPrice }}</text>
+    <text>{{ item.productDiscount }}</text>
+  </view>
+  <view class="pur-oper">
+    <wux-cell title="" hover-class="none">
+      <wux-input-number 
+        wux-class="border: none" 
+        wux-add-class="win-add-icon" 
+        wux-input-class="win-input" 
+        shape="circle" color="light" 
+        slot="footer" disabled="{{ false }}" />
+    </wux-cell>
+  </view>
+</view>

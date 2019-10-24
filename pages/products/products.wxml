@@ -1,2 +1,18 @@
-<!--pages/products/products.wxml-->
-<text>pages/products/products.wxml</text>
+<view class="container">
+  <!-- 搜索框 100rpx -->
+  <view class="search-bar">
+    <text class="iconfont icon-search"></text>
+    <input
+      placeholder="搜 索"></input>
+  </view>
+
+  <!-- 筛选 -->
+  <view class="screen">
+    <text>综合<text class="iconfont icon-sanjiao"></text></text>
+    <text>编号</text>
+    <text>最新</text>
+    <text>筛选<text class="iconfont icon-shaixuan"></text></text>
+  </view>
+  
+
+</view>

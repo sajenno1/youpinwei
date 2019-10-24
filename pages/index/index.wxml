@@ -111,4 +111,15 @@
     </view>
   </view>
 
+  <!-- 二维码、分类等工具栏 -->
+  <view class="tools">
+    <text class="iconfont icon-scan-line"></text>
+    <text class="iconfont icon-liebiao"></text>
+    <view>
+      <text class="iconfont icon-search"></text>
+      <text>搜索你的心仪产品</text>
+    </view>
+  </view>
+
+
 </view>

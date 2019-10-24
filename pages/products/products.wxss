@@ -1,1 +1,36 @@
-/* pages/products/products.wxss */
+.search-bar {
+  height: 60rpx;
+  width: cacl(100% - 20rpx);
+  background: #fff;
+  padding: 20rpx;
+}
+
+.search-bar text {
+  position: absolute;
+  font-size: 40rpx;
+  top: 30rpx;
+  left: 30rpx;
+}
+
+.search-bar input {
+  background: #f4f4f4;
+  padding-left: 65rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
+
+.screen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 96rpx;
+  text-align: center;
+  background: #fff;
+  border-top: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+}
+
+.screen > text {
+  flex: 1;
+}

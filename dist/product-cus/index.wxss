@@ -1,0 +1,66 @@
+.products {
+  width: 347rpx;
+  height: 600rpx;
+  padding: 15rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.products {
+  border-bottom: 2rpx solid #eee;
+}
+
+.products:nth-child(odd) {
+  border-right: 2rpx solid #eee;
+}
+
+.products > image {
+  width: 340rpx;
+  height: 340rpx;
+}
+
+.products text:nth-child(2) {
+  font-size: 32rpx;
+  line-height: 60rpx;
+  color: #222;
+}
+
+.products text:nth-child(3) {
+  color: rgb(153, 153, 153);
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
+
+.products-price text:nth-child(1) {
+  color: rgb(245, 166, 35);
+  font-size: 40rpx;
+  line-height: 70rpx;
+  width: auto;
+}
+
+.products-price text:nth-child(2) {
+  color: rgb(125, 198, 108);
+  display: inline-block;
+  font-size: 20rpx;
+  background: rgb(240, 249, 235);
+  padding:0 10rpx;
+  line-height: 40rpx;
+  vertical-align: top;
+}
+
+.pur-oper {
+  height: 60rpx;
+}
+
+/* 数字输入框 */
+.pur-oper .wux-cell:after {
+  border: none;
+}
+
+.win-add-icon {
+  background: rgb(3, 150, 255);
+}
+
+.win-input {
+  background: rgb(248, 248, 248)
+}

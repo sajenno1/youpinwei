@@ -5,6 +5,7 @@ const iconHttp = "http://abtl.mooshine.cn/Media/Abtl/AdvertItemPhotos/"
 const imgHttp ="http://ypw.sunton.cn/Media/Default/ProductPhotos/"
 Page({
   data: {
+    haveTitle: true,//商品列表栏标题
     advert: [
       '../../image/swiper1.jpg', 
       '../../image/swiper2.jpg', 
@@ -124,5 +125,8 @@ Page({
         ]
       }
     }
+  },
+  onLoad(options) {
+    app.getProductList()
   }
 })
