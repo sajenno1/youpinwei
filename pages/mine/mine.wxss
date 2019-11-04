@@ -1,1 +1,88 @@
-/* pages/mine/mine.wxss */
+.userinfo {
+  height: 300rpx;
+  width: 100%;
+  background: rgb(3, 150, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.userAvatarUrl {
+  overflow:hidden;  
+  display: block;  
+  width: 120rpx;  
+  height: 120rpx;  
+  border-radius: 50%;  
+  border: 5rpx solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+} 
+
+.ot {
+  margin-top: 20rpx;
+  background: #fff;
+}
+
+.ot > view:not(:last-child) {
+  border-bottom: #eee 2rpx solid;
+}
+
+.ot .my-order {
+  height: 85rpx;
+  line-height: 85rpx;
+}
+
+.in {
+  height: 100rpx;
+  margin: 0 20rpx;
+  display: flex;
+  line-height: 100rpx;
+  position: relative;
+  color: #000;
+}
+
+.in .title {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.in .iconfont:nth-child(1){
+  font-size: 40rpx;
+  margin-right: 10rpx;
+}
+
+.rt {
+  color: #9b9b9b;
+  font-size: 28rpx;
+  position: absolute;
+  right: 20rpx;
+}
+.rt {
+  font-size: 24rpx;
+}
+
+.order-status {
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+  font-size: 24rpx;
+}
+
+.order-status view {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-status view .iconfont {
+  color: rgb(3, 150, 255);
+  font-size: 60rpx;
+}
+
+
+.ot .in .weui-cell {
+  padding: 0;
+}

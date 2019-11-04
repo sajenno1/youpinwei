@@ -1,4 +1,4 @@
-const PRODUCT_LIST = 'MallWeb/Main/ProductList'
+const PRODUCT_LIST = 'mallweb/mp/productItems'
 
 export {
   PRODUCT_LIST,

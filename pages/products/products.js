@@ -62,5 +62,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  dd(e) {
+    console.log(e)
+    // wx.getUserInfo({
+      
+    // })
   }
 })

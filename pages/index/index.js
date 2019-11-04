@@ -127,6 +127,8 @@ Page({
     }
   },
   onLoad(options) {
+    //获取商品列表
     app.getProductList()
   }
+  
 })

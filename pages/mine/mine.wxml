@@ -1,2 +1,89 @@
-<!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="container">
+
+  <view class="userinfo">
+    <view class="userAvatarUrl">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <open-data type="userNickName" class="userNickName"></open-data>
+  </view>
+
+  <view class="ot">
+    <view class="in my-order">
+      <text class="title">我的订单</text>
+      <text class="rt iconfont icon-gengduo">更多</text>
+    </view>
+    <view class="order-status">
+      <view>
+        <text class="iconfont icon-zhangdan"></text>
+        <text>待付款</text>
+      </view>
+      <view>
+        <text class="iconfont icon-baoguofahuo"></text>
+        <text>待发货</text>
+      </view>
+      <view>
+        <text class="iconfont icon-yunshuzhongwuliu"></text>
+        <text>待收货</text>
+      </view>
+      <view>
+        <text class="iconfont icon-dingdanwancheng"></text>
+        <text>已完成</text>
+      </view>
+      <view>
+        <text class="iconfont icon-dingdanquxiao"></text>
+        <text>已关闭</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="ot">
+    <view class="in">
+      <text class="lt iconfont icon-yaoqing1" style="color: rgb(3,150,255)"></text>
+      <text>邀请（推广）</text>
+      <text class="rt iconfont icon-gengduo"></text>
+    </view>
+    <view class="in">
+      <text class="lt iconfont icon-fenxiao" style="color: rgb(239, 79, 79)"></text>
+      <text>分销商管理</text>
+      <text class="rt iconfont icon-gengduo"></text>
+    </view>
+  </view>
+
+  <view class="ot">
+    <view class="in">
+      <text class="lt iconfont icon-dizhi1" style="color: rgb(62, 234, 148)"></text>
+      <text>收货地址</text>
+      <text class="rt iconfont icon-gengduo"></text>
+    </view>
+    <view class="in">
+      <text class="lt iconfont icon-yue01" style="color: rgb(250, 183, 7)"></text>
+      <text>账户余额</text>
+      <text class="rt iconfont icon-gengduo">0元</text>
+    </view>
+    <view class="in">
+      <text class="lt iconfont icon-handout" style="color: rgb(3, 150, 255)"></text>
+      <text>我的收益</text>
+      <text class="rt iconfont icon-gengduo"></text>
+    </view>
+    <view class="in">
+      <text class="lt iconfont icon-tuihuo" style="color: rgb(200, 200, 200)"></text>
+      <text>退货申请</text>
+      <text class="rt iconfont icon-gengduo"></text>
+    </view>
+    <view class="in">
+      <text class="lt iconfont icon-tuihuodingdan" style="color: rgb(239, 79, 79)"></text>
+      <text>退货订单</text>
+      <text class="rt iconfont icon-gengduo"></text>
+    </view>
+    <view class="in">
+      <text class="lt iconfont icon-xiaoxi" style="color: rgb(0, 0, 0)"></text>
+      <!-- <text>我的消息</text> -->
+      <mp-cell link style="display: inline">
+          <view style="display: inline-block; vertical-align: middle">我的消息</view>
+          <mp-badge content="8" style="margin-left: 10rpx;"/>
+      </mp-cell>
+      <text class="rt iconfont icon-gengduo"></text>
+    </view>
+  </view>
+
+</view>

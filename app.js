@@ -43,7 +43,7 @@ App({
    * 获取商品列表
    */
   getProductList() {
-    http.post(api.PRODUCT_LIST, {accessType: 'MP'}).then(res => {
+    http.post(api.PRODUCT_LIST, {code: wx.getStorageSync('code')}).then(res => {
       console.log(res)
     }).catch(err => {
       console.log(err)

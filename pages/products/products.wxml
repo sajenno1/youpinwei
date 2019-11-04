@@ -13,6 +13,8 @@
     <text>最新</text>
     <text>筛选<text class="iconfont icon-shaixuan"></text></text>
   </view>
+
+  <button open-type="getUserInfo" bindgetuserinfo="dd">000</button>
   
 
 </view>

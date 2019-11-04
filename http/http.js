@@ -1,5 +1,5 @@
 const app = getApp()
-const host = 'http://ypw.sunton.cn/'
+const host = 'https://mp.sunton.cn/'
 
 const request = (url, options) => {
   return new Promise((resolve, reject) => {
