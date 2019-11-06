@@ -1,12 +1,12 @@
 <view class="container">
-
+  <!-- 用户头像 -->
   <view class="userinfo">
     <view class="userAvatarUrl">
       <open-data type="userAvatarUrl"></open-data>
     </view>
     <open-data type="userNickName" class="userNickName"></open-data>
   </view>
-
+  <!-- 我的订单 -->
   <view class="ot">
     <view class="in my-order">
       <text class="title">我的订单</text>
@@ -35,7 +35,7 @@
       </view>
     </view>
   </view>
-
+  <!-- 推广、分销 -->
   <view class="ot">
     <view class="in">
       <text class="lt iconfont icon-yaoqing1" style="color: rgb(3,150,255)"></text>
@@ -48,7 +48,7 @@
       <text class="rt iconfont icon-gengduo"></text>
     </view>
   </view>
-
+  <!-- 收货地址等.. -->
   <view class="ot">
     <view class="in">
       <text class="lt iconfont icon-dizhi1" style="color: rgb(62, 234, 148)"></text>
@@ -80,7 +80,7 @@
       <!-- <text>我的消息</text> -->
       <mp-cell link style="display: inline">
           <view style="display: inline-block; vertical-align: middle">我的消息</view>
-          <mp-badge content="8" style="margin-left: 10rpx;"/>
+          <mp-badge content="{{ msgNum }}" style="margin-left: 10rpx;"/>
       </mp-cell>
       <text class="rt iconfont icon-gengduo"></text>
     </view>

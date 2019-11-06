@@ -120,18 +120,7 @@
   height: 60rpx;
 }
 
-/* 数字输入框 */
-.pur-oper .wux-cell:after {
-  border: none;
-}
 
-.win-add-icon {
-  background: rgb(3, 150, 255);
-}
-
-.win-input {
-  background: rgb(248, 248, 248)
-}
 
 /* 悬浮 */
 .tools {
@@ -160,7 +149,6 @@
   margin-left: 19rpx;
   height: 70rpx;
   line-height: 70rpx;
-  /* display: inline-block; */
   width: 500rpx;
   background: rgba(255, 255, 255, 0.9);
   position: absolute;

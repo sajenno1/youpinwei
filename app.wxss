@@ -9,9 +9,40 @@ page {
   background: rgb(248, 248, 248);
 }
 
+/* 搜索框... */
+.search-bar {
+  height: 60rpx;
+  /* width: cacl(100% - 20rpx); */
+  background: #fff;
+  padding: 19rpx;
+  border-bottom: #eee 2rpx solid;
+}
+.search-bar text {
+  position: absolute;
+  font-size: 40rpx;
+  top: 30rpx;
+  left: 30rpx;
+}
+.search-bar input {
+  background: #f4f4f4;
+  padding-left: 65rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+}
 
+/* 数字输入框 */
+.pur-oper .wux-cell:after {
+  border: none;
+}
 
+.win-add-icon {
+  background: rgb(3, 150, 255);
+}
 
+.win-input {
+  background: rgb(248, 248, 248)
+}
 
 @font-face {font-family: "iconfont";
   src: url('iconfont.eot?t=1572833931979'); /* IE9 */

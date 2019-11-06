@@ -1,1 +1,82 @@
-/* pages/classify/classify.wxss */
+.content {
+  display: flex;
+}
+/* 左边导航 */
+.lt-nav {
+  width: 200rpx;
+  background: #fff;
+}
+.lt-nav view {
+  width: 70%;
+  padding: 0 15%;
+  height: 98rpx;
+  line-height: 98rpx;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+.lt-nav view:after {
+  position: absolute;
+  bottom: 0;
+  width:70%; 
+  left:15%;
+  border-bottom: 2rpx solid #eee;
+  content: '';
+}
+.lt-nav view:last-of-type:after {/* 取消最后一个的border */
+  border: none;
+}
+.active {
+  background: rgb(248, 248, 248);
+  border-left: 10rpx solid rgb(3, 150, 255);
+}
+/* 右边 */
+.rt-content {
+  width: 510rpx;
+  padding: 20rpx;
+}
+.product-litter {
+  height: 180rpx;
+  padding: 10rpx;
+  background: #fff;
+}
+.product-litter image {
+  width: 180rpx;
+  height: 180rpx;
+  display: inline-block;
+  vertical-align: top;
+}
+.product-litter-rt {
+  display: inline-block;
+  width: 300rpx;
+  padding-left: 10rpx;
+  height: 180rpx;
+  vertical-align: top;
+  position: relative;
+  font-size: 28rpx;
+}
+.product-name {
+  height: 90rpx;
+  line-height: 45rpx;
+  position: absolute;
+  top: 0;
+  display: -webkit-box;/* 2行 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.product-price,.pur-oper {
+  height: 45rpx;
+  position: absolute;
+}
+.product-price {
+  top: 90rpx;
+}
+.pur-oper {
+  top: 135rpx;
+}

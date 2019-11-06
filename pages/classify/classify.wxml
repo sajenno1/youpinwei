@@ -1,2 +1,37 @@
-<!--pages/classify/classify.wxml-->
-<text>pages/classify/classify.wxml</text>
+<view class="container">
+  <!-- 搜索框 100rpx -->
+  <view class="search-bar">
+    <text class="iconfont icon-search"></text>
+    <input 
+      placeholder="搜 索"></input>
+  </view>
+  <view class="content" style="height: {{ wHeight - 100 }}rpx">
+    <!-- 左边导航 -->
+    <scroll-view scroll-y="{{ true }}" class="lt-nav" style="height: 100%">
+      <block wx:for="{{ itemList }}" wx:key="index">
+        <view data-item="{{ item }}" class="{{ selectId == item.cateId ? 'active' : '' }}" bindtap="showGoods">{{ item.cate }}</view>
+      </block>
+    </scroll-view>
+    <!-- 右边内容 -->
+    <scroll-view scroll-y="{{ true }}" class="rt-content" style="height: 100%">
+      <block wx:for="{{ rtGoods }}" wx:key="index">
+        <view class="product-litter">
+          <image src="{{ item.imgUrl}}"></image>
+          <view class="product-litter-rt">
+            <rich-text class="product-name">{{ item.productName }}</rich-text>
+            <rich-text class="product-price">
+              <text>￥</text>
+              <text>{{ item.productPrice }}</text>
+              <text>{{ item.productDiscount }}</text>
+            </rich-text>
+            <view class="pur-oper">
+              <wux-cell title="" hover-class="none">
+                <wux-input-number wux-class="border: none" wux-add-class="win-add-icon" wux-input-class="win-input" shape="circle" color="light" slot="footer" disabled="{{ false }}" />
+              </wux-cell>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

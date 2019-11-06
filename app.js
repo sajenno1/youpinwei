@@ -3,6 +3,9 @@ import * as api from './http/api.js'
 import http from './http/http.js' 
 App({
   onLaunch: function () {
+    // 获取设备高度
+
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -37,7 +40,9 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    wHeight: wx.getSystemInfoSync().windowHeight,
+    wWidth: wx.getSystemInfoSync().windowWidth
   },
   /**
    * 获取商品列表
