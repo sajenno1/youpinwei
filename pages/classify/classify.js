@@ -22,6 +22,62 @@ Page({
             productDiscount: '7.5折',
             productStock: '992'
           },
+          {
+            imgUrl: `${imgHttp}/190912_36784787c47242b4bf162d0e14ca7e76.jpg`,
+            productName: '纯石墨烯养护鼻罩',
+            productUrl: '',
+            productPrice: '298.5',
+            productDiscount: '7.5折',
+            productStock: '992'
+          },
+          {
+            imgUrl: `${imgHttp}/190912_36784787c47242b4bf162d0e14ca7e76.jpg`,
+            productName: '纯石墨烯养护鼻罩',
+            productUrl: '',
+            productPrice: '298.5',
+            productDiscount: '7.5折',
+            productStock: '992'
+          },
+          {
+            imgUrl: `${imgHttp}/190912_36784787c47242b4bf162d0e14ca7e76.jpg`,
+            productName: '纯石墨烯养护鼻罩',
+            productUrl: '',
+            productPrice: '298.5',
+            productDiscount: '7.5折',
+            productStock: '992'
+          },
+          {
+            imgUrl: `${imgHttp}/190912_36784787c47242b4bf162d0e14ca7e76.jpg`,
+            productName: '纯石墨烯养护鼻罩',
+            productUrl: '',
+            productPrice: '298.5',
+            productDiscount: '7.5折',
+            productStock: '992'
+          },
+          {
+            imgUrl: `${imgHttp}/190912_36784787c47242b4bf162d0e14ca7e76.jpg`,
+            productName: '纯石墨烯养护鼻罩',
+            productUrl: '',
+            productPrice: '298.5',
+            productDiscount: '7.5折',
+            productStock: '992'
+          },
+          {
+            imgUrl: `${imgHttp}/190912_36784787c47242b4bf162d0e14ca7e76.jpg`,
+            productName: '纯石墨烯养护鼻罩',
+            productUrl: '',
+            productPrice: '298.5',
+            productDiscount: '7.5折',
+            productStock: '992'
+          },
+          {
+            imgUrl: `${imgHttp}/190912_36784787c47242b4bf162d0e14ca7e76.jpg`,
+            productName: '纯石墨烯养护鼻罩',
+            productUrl: '',
+            productPrice: '298.5',
+            productDiscount: '7.5折',
+            productStock: '992'
+          },
         ] 
       },
       { cate: '背包1', cateId: 104 },

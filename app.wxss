@@ -1,7 +1,8 @@
 page {
   height: 100%;
   font-size: 32rpx;
-  color: rgb(97, 97, 97)
+  color: rgb(97, 97, 97);
+  font-family: arial,sans-serif;
 }
 
 .container {

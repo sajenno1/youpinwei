@@ -41,6 +41,7 @@
   height: 180rpx;
   padding: 10rpx;
   background: #fff;
+  margin-bottom: 20rpx;
 }
 .product-litter image {
   width: 180rpx;
@@ -58,8 +59,8 @@
   font-size: 28rpx;
 }
 .product-name {
-  height: 90rpx;
-  line-height: 45rpx;
+  height: 80rpx;
+  line-height: 40rpx;
   position: absolute;
   top: 0;
   display: -webkit-box;/* 2行 */
@@ -71,12 +72,39 @@
   -webkit-box-orient: vertical;
 }
 .product-price,.pur-oper {
-  height: 45rpx;
   position: absolute;
 }
 .product-price {
-  top: 90rpx;
+  height: 45rpx;
+  top: 80rpx;
 }
+
+/* 价格 */
+.product-price text:nth-child(1) {
+  font-size: 24rpx;
+  color: rgb(245, 166, 35);
+}
+.product-price text:nth-child(2) {
+  font-size: 36rpx;
+  color: rgb(245, 166, 35);
+}
+.product-price text:nth-child(3) {
+  font-size: 24rpx;
+  /* margin-left: 10rpx; */
+  color: rgb(125, 198, 108);
+  background: rgb(240, 249, 235);
+  padding: 0 10rpx;
+  font-weight: 600;
+}
+
+/* 数字输入框 */
 .pur-oper {
-  top: 135rpx;
+  height: 55rpx;
+  top: 125rpx;
+  width: 300rpx;
+  text-align: right;
+  padding-right: 10rpx;
+}
+.pur-oper .wux-cell {
+  padding: 0;
 }
