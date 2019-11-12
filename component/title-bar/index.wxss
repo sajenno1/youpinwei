@@ -1,0 +1,29 @@
+@import "../../utils/iconfont.wxss";
+.title-bar {
+  background: #fff;
+  height: 98rpx;
+  line-height: 98rpx;
+  border-bottom: 2rpx solid #eee;
+  text-align: center;
+  position: relative;
+  color: #000;
+}
+
+.title-bar text:not(:last-child) {
+  font-size: 28rpx;
+  position: absolute;
+}
+
+.title-bar text:nth-child(1) {
+  left: 20rpx;
+  color: rgb(3, 150, 255);
+}
+
+.title-bar text:nth-child(2) {
+  left: 130rpx;
+  color: rgb(3, 150, 255);
+}
+
+.title-bar text:last-child {
+  font-size: 36rpx;
+}

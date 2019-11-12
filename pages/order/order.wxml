@@ -1,0 +1,63 @@
+<view class="container">
+  <!-- 标题组件 -->
+  <title-bar
+    title="我的订单">
+  </title-bar>
+  <!-- 搜索框 -->
+  <view class="search-bar">
+    <text class="iconfont icon-search"></text>
+    <input
+      placeholder="搜 索"></input>
+  </view>
+  <!-- 订单状态筛选 -->
+  <view class="order-status">
+    <block wx:for="{{ status }}" wx:key="index">
+      <view 
+        class="order-state {{ active == item.state? 'active': '' }}" 
+        data-state="{{ item.state }}"
+        bindtap="queryState">
+        {{ item.tag }}
+      </view>
+    </block>
+  </view>
+  <!-- 订单 -->
+  <view class="order-list">
+    <block wx:for="{{ orderList }}" wx:key="index">
+      <view data-state="{{ item.state }}">
+        <view class="order-no">
+          <text>订单编号：{{ item.orderNo }}</text>
+          <text>{{ item.tag }}</text>
+        </view>
+        <view class="order-num">数量：{{ item.num }}</view>
+        <view class="order-time">时间：{{ item.time }}</view>
+        <view class="order-amount">金额：{{ item.amount }}</view>
+        <view class="order-btn" capture-bind:touchstart="getDetail" data-detail="{{ item }}">
+          <block wx:if="{{ item.state == 'wpay' }}">
+            <button bindtap="barCode" >取货码</button>
+            <button>去付款</button>
+            <button class="cancel">取消订单</button>
+          </block>
+          <block wx:elif="{{ item.state == 'wsend' }}">
+            <button bindtap="barCode">取货码</button>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <!-- 条形码弹窗 -->
+  <mp-dialog 
+    title="订单条形码" 
+    show="{{showOneButtonDialog}}" 
+    bindbuttontap="closeDialog" 
+    buttons="{{oneButton}}">
+        <view class="dialog-slot">
+          <canvas canvas-id="barcode" />
+          <view class="dialog-order-no">
+            <text>{{ currentOrderNo }}</text>
+          </view>
+        </view>
+        
+    </mp-dialog>
+
+</view>

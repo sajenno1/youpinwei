@@ -10,7 +10,7 @@
   <view class="ot">
     <view class="in my-order">
       <text class="title">我的订单</text>
-      <text class="rt iconfont icon-gengduo">更多</text>
+      <text bindtap="toOrderPage" class="rt iconfont icon-gengduo">更多</text>
     </view>
     <view class="order-status">
       <view>

@@ -65,5 +65,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  /**
+   * 更多订单
+   */
+  toOrderPage() {
+    wx.navigateTo({
+      url: '/pages/order/order',
+    })
   }
 })

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mp-dialog":"../../weui/dialog/dialog",
+    "title-bar":"../../component/title-bar/index"
+  }
+}

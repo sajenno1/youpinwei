@@ -13,7 +13,7 @@
       </block>
     </scroll-view>
     <!-- 右边内容 -->
-    <scroll-view scroll-y="{{ true }}" class="rt-content" style="height: 100%">
+    <scroll-view scroll-y="{{ true }}" class="rt-content" style="height: cacl(100% - 40rpx)">
       <block wx:for="{{ rtGoods }}" wx:key="index">
         <view class="product-litter">
           <image src="{{ item.imgUrl}}"></image>

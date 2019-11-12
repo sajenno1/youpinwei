@@ -1,0 +1,5 @@
+<view class="title-bar">
+  <text bindtap="backLastPage" class="iconfont icon-xiala-copy-copy">返回</text>
+  <text bindtap="toHomePage">主页</text>
+  <text>{{ title }}</text>
+</view>
